@@ -20,7 +20,7 @@ object RunEnergy {
      */
     val STAMINA_BOOST = TimerKey("stamina_boost", tickOffline = false)
 
-    private const val RUN_ENABLED_VARP = 173
+    const val RUN_ENABLED_VARP = 173
 
     fun toggle(p: Player) {
         if (p.runEnergy >= 1.0) {

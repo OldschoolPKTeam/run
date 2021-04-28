@@ -2,6 +2,9 @@ package gg.rsmod.plugins.content.mechanics.run
 
 on_login {
     player.timers[RunEnergy.RUN_DRAIN] = 1
+    if (player.isFirstLogin()) {
+        player.setVarp(RunEnergy.RUN_ENABLED_VARP, 1)
+    }
 }
 
 on_timer(RunEnergy.RUN_DRAIN) {
